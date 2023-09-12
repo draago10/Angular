@@ -13,6 +13,7 @@ export class TopheadingComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log("ben sucks")
     this.service.topHeading().subscribe((result) => {
       console.log(result)
       this.topheadingDisplay = result.articles

@@ -1,0 +1,13 @@
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div *ngFor="let data of ashesOfWar" routerLink="ashOfWarDetail"  (click)="test(data)" class="col-lg-3 mt-3 mb-3 cursor-pointer">
+            <div class="box">
+                <img src="{{data.image}}" onerror="this.src='/assets/images/noImage.jpg'" width="50%">
+                <h5>{{data.name}}</h5>
+                <h6>Affinity: {{data.affinity}}</h6>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
